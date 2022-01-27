@@ -1,38 +1,71 @@
+:root {
+  --mainColor: #282c34;
+  --secondaryColor: #ff8800;
+  --silverColor: #f1f1f1;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: var(--mainColor);
+  min-height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 4rem;
   color: white;
+  padding-top: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.App-wrapper {
+  max-width: 1100px;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text {
+  color: var(--silverColor);
+  font-size: 1.2rem;
+}
+
+.bar {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input {
+  background-color: #00000000;
+  border: 1px solid var(--silverColor);
+  border-radius: 8px;
+  padding: .6rem;
+  color: var(--silverColor);
+  outline: var(--silverColor);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.button {
+  border-radius: 8px;
+  background-color: var(--secondaryColor);
+  padding: .8rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.found-entries {
+  font-weight: bold;
+  flex: 1;
+  color: var(--silverColor);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.giph-pic {
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  margin: 8px;
 }
